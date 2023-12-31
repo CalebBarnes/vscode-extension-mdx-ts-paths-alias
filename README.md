@@ -1,71 +1,49 @@
-# mdx-ts-paths-alias README
+# MDX TS Path Alias - Go To Definition Extension for VSCode
 
-This is the README for your extension "mdx-ts-paths-alias". After writing up a brief description, we recommend including the following sections.
+This Visual Studio Code extension enhances the support for MDX files by enabling the "Go to Definition" feature. It resolves import paths in MDX files using the project's `tsconfig` path aliases, making navigation in your project more efficient and streamlined.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Go to Definition in MDX**: Quickly jump to the definition of imported components or modules directly from your MDX files.
+- **Path Resolution**: Seamlessly resolves import paths based on `tsconfig` path aliases, ensuring accurate navigation across different files and directories.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+To install the extension, follow these steps:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Open VSCode.
+2. Navigate to the Extensions view by clicking on the square icon on the sidebar or pressing `Ctrl+Shift+X`.
+3. Search for "MDX TS Paths Alias - Go To Definition".
+4. Click on the install button.
+
+## Usage
+
+Once installed, the extension will automatically enhance the "Go to Definition" functionality in MDX files. Hover over an import statement or a component, and use the usual shortcut (`F12` or `Ctrl+Click`) to jump to its definition.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Make sure you have the "MDX" extension installed in your VSCode editor. You can install it by following these steps
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+There is a conflict with go to definition on tokens like JSX tags. This is a known issue with the MDX extension.
 
-## Release Notes
+To resolve this, disable the setting in MDX extension named "Enable experimental IntelliSense support for MDX files".
 
-Users appreciate release notes as you update your extension.
+The json setting:
 
-### 1.0.0
+```json
+"mdx.server.enable": false
+```
 
-Initial release of ...
+## Contributing
 
-### 1.0.1
+Found a bug or have a feature request? Feel free to open an issue or submit a pull request on our [GitHub repository](https://github.com/your-repository-link).
 
-Fixed issue #.
+## License
 
-### 1.1.0
-
-Added features X, Y, and Z.
+This extension is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Note: This README is for the VSCode extension that adds enhanced navigation support for MDX files in projects with `tsconfig` path aliases.

@@ -1,6 +1,6 @@
 {
   "name": "mdx-ts-paths-alias",
-  "displayName": "MDX TS Paths Alias",
+  "displayName": "MDX TS Paths Alias - Go To Definition",
   "description": "",
   "version": "0.0.1",
   "engines": {
