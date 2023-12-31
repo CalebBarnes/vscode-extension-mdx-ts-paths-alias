@@ -22,12 +22,13 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run compile",
+    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "pnpm run compile && pnpm run lint",
+    "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "package": "vsce package --out dist"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",
@@ -42,5 +43,10 @@
   },
   "dependencies": {
     "tsconfig-paths": "^4.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CalebBarnes/vscode-extension-mdx-ts-paths-alias.git"
+  },
+  "license": "MIT"
 }
