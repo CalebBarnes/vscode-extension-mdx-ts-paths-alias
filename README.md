@@ -22,7 +22,9 @@ Once installed, the extension will automatically enhance the "Go to Definition" 
 
 ## Requirements
 
-Make sure you have the "MDX" extension installed in your VSCode editor. You can install it by following these steps
+Make sure you have the "MDX" extension installed in your VSCode editor.
+
+You can install it by searching "MDX" in the Extensions view (`Ctrl+Shift+X`).
 
 ## Known Issues
 
