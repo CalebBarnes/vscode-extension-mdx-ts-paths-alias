@@ -1,6 +1,7 @@
 {
   "name": "mdx-ts-paths-alias",
   "displayName": "MDX TS Paths Alias - Go To Definition",
+  "publisher": "CalebBarnes",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -28,7 +29,7 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test",
-    "package": "vsce package --out dist"
+    "package": "vsce package"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",
