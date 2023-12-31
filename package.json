@@ -47,6 +47,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/CalebBarnes/vscode-extension-mdx-ts-paths-alias.git"
-  },
-  "license": "MIT"
+  }
 }
