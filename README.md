@@ -40,7 +40,7 @@ The json setting:
 
 ## Contributing
 
-Found a bug or have a feature request? Feel free to open an issue or submit a pull request on our [GitHub repository](https://github.com/your-repository-link).
+Found a bug or have a feature request? Feel free to open an issue or submit a pull request on our [GitHub repository](https://github.com/CalebBarnes/vscode-extension-mdx-ts-paths-alias).
 
 ## License
 
